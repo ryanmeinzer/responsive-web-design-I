@@ -158,6 +158,7 @@ h5 {
 }
 
 /* Navigation */
+
 .main-header .navbar {
   padding: 10px;
 }
@@ -251,3 +252,31 @@ footer p {
 footer .copyright {
   text-align: center;
 }
+
+/* Start Responsiveness */
+
+ /* At 800px and below do the following: */
+ @media (max-width: 800px) {
+    .navbar {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+}
+
+ /* At 500px and below do the following:
+ @media (max-width: 500px) {
+    .navbar {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+} */
