@@ -88,7 +88,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  /* border: 0; */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -133,6 +133,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 html,
@@ -152,131 +153,276 @@ h5 {
 }
 
 /* Your code starts here! */
+
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
-/* Navigation */
-
-.main-header .navbar {
-  padding: 10px;
+section nav {
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+	margin: 30px auto;
 }
 
-.main-header .navbar ul {
-  display: inline-block;
+.links {
+	color: gray;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 75%;
 }
 
-.main-header .navbar ul li {
-  display: inline;
-  padding: 0 20px;
+.logo-container {
+	width: 15%;
 }
 
-.main-header .navbar ul li a {
-  color: #ccc;
-  text-decoration: none;
-  padding: 5px;
-  font-size: 20px;
+/* start of Header Section */
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.logo {
-  margin-left: 35%;
+.left-header {
+	width: 45%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-/* Hero section */
-.main-header .caption {
-  display: inline;
-  text-align: center;
+.words {
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
-.main-header .caption h1 {
-  font-size: 75px;
-  display: inline-block;
-  padding: 5px;
-  margin: 10% 0 2% 10%;
+h1{
+	font-size: 75px;
+	text-align: center;
 }
 
-.main-header .caption a {
-  padding: 0 20px 0 20px;
-  border: #333 1px solid;
-  color: #333;
-  text-decoration: none;
-  margin: 0 0 0 16%;
-  font-size: 20px;
+.right-header {
+	width: 45%;
+	display: flex;
 }
 
-.main-header .header-img {
-  margin: -25% 0 8% 70%;
+.button-home {
+	font-size: 18px;
+	padding: 5px 30px;
+	border: 1px solid black;
+	color: black;
+	margin: 0 auto;
 }
 
-/* Content section */
-
-.content-section .content-box-top {
-  display: inline-block;
-  max-width: 500px;
-  margin: 2% 0 2% 8%;
-  padding: 20px;
+.right-header img{
+	width: 60%;
 }
 
-.content-section .content-box h1 {
-  font-size: 30px;
+/* Line Break */
+
+hr {
+	border: 1px solid black;
 }
 
-.content-section .content-box p {
-  font-size: 18px;
+/* Top Section */
+
+.top-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto 30px;
 }
 
-.content-section .middle-img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+.Features{
+	display: flex;
+	flex-wrap: wrap;
+	width: 45%;
 }
 
-.content-section .content-box-bottom {
-  display: inline-block;
-  max-width: 300px;
-  margin: 2% 0 2% 8%;
-  padding: 20px;
+.About{
+	display:flex;
+	flex-wrap: wrap;
+	width: 45%;
 }
 
-/* Footer */
-footer h1 {
-  margin-top: 2%;
+/* Middle Image */
+
+.middle-img-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 30px;
 }
 
-/* Margin-bottom */
-footer p {
-  margin-bottom: 2%;
+.middle-img {
+	width: 100%;
+	height: auto;
 }
 
-footer .copyright {
-  text-align: center;
+/* Bottom Section */
+
+.bottom-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto 30px;
+}
+
+.Services{
+	display: flex;
+	flex-wrap: wrap;
+	width: 30%;
+}
+
+.Product{
+	display: flex;
+	flex-wrap: wrap;
+	width: 30%;
+}
+
+.Vision{
+	display: flex;
+	flex-wrap: wrap;
+	width: 30%;
+}
+
+/* Contact Section */
+
+.contact{
+	width: 100%;
+	margin: 0 auto 30px;
+}
+
+footer{
+	text-align: center;
+}
+
+/* End of Index.html, Start of Services.html */
+
+/* Top Section & Navigation the Same; Added hyperlink to logo */
+
+/* Top-Middle Section */
+
+.services-header-img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto 30px;
+}
+
+.services-title {
+	font-size: 25px;
+	text-align: center;
+}
+
+.services-section{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 30px;
+}
+
+.line-break {
+	width: 100%;
+	margin: 30px auto 0;
+}
+
+.line-break2 {
+	width: 100%;
+	margin: 0 auto 30px;
+}
+
+/* Bottom-Middle Section */
+
+.box {
+	background: #eeece8;
+	display: flex;
+	flex-wrap: wrap;
+	width: 48%;
+	height: auto;
+	margin: 30px 0;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+button {
+	border-radius: 5px;
+	font-size: 10px;
+	width: 20%;
+	height: 20%;
+	margin: 15px 0;
+	border: 1px solid black;
+}
+
+.row-1, .row-2, .row-3 {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Bottom Section */
+
+.bottom-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px auto;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+.left-side {
+	display: flex;
+	flex-wrap: wrap;
+	width: 48%;
+	align-content: space-around;
+}
+
+footer {
+	text-align: center;
 }
 
 /* Start Responsiveness */
 
- /* At 800px and below do the following: */
+/* At 800px and below do the following: */
+
  @media (max-width: 800px) {
-    .navbar {
+    .nav-container nav {
         display: flex;
+        width: 100%;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
 
-    .logo {
+    .logo-container {
         width: 200px;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-header {
+      display: block;
+      width: 100%;
+    }
+
+    .button-home {
+      display: flex;
+      width: 25%;
+    }
+
+    .right-header {
+        display: none;
     }
 }
-
- /* At 500px and below do the following:
- @media (max-width: 500px) {
-    .navbar {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .logo {
-        width: 200px;
-        margin-bottom: 30px;
-    }
-} */
